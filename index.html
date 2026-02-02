@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Casa de Carnes Fernandes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f0e6;
+            min-height: 100vh;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Áreas clicáveis invisíveis sobre o menu */
+        .clickable-area {
+            position: absolute;
+            cursor: pointer;
+            /* background: rgba(255,0,0,0.2); */ /* Descomente para debug */
+        }
+
+        .clickable-area:hover {
+            background: rgba(139, 35, 50, 0.1);
+        }
+
+        /* Página do Menu - Áreas clicáveis */
+        #menu-page {
+            position: relative;
+        }
+
+        /* Separador entre páginas */
+        .page-separator {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #8B2332, transparent);
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #8B2332;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 12px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .scroll-indicator:hover {
+            background: #6B1C23;
+        }
+
+        /* Back to menu button style */
+        .back-to-menu {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            background: #8B2332;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px auto;
+            max-width: 200px;
+            border-radius: 5px;
+        }
+
+        .back-to-menu:hover {
+            background: #6B1C23;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Página 1: Capa -->
+    <section class="page" id="capa">
+        <img src="images/pagina_1.png" alt="Capa - Catálogo Casa de Carnes Fernandes" onclick="location.href='#menu'">
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 2: Menu -->
+    <section class="page" id="menu">
+        <div id="menu-page" style="position: relative; width: 100%;">
+            <img src="images/pagina_2.png" alt="Menu" usemap="#menu-map">
+            
+            <!-- Áreas clicáveis do menu - DIA A DIA -->
+            <a href="#bovinos-dia" class="clickable-area" style="top: 22%; left: 5%; width: 40%; height: 5%;"></a>
+            <a href="#frango-dia" class="clickable-area" style="top: 27%; left: 5%; width: 40%; height: 5%;"></a>
+            <a href="#suinos-dia" class="clickable-area" style="top: 32%; left: 5%; width: 40%; height: 5%;"></a>
+            <a href="#peixes-dia" class="clickable-area" style="top: 37%; left: 5%; width: 40%; height: 5%;"></a>
+            <a href="#frutos-mar" class="clickable-area" style="top: 42%; left: 5%; width: 40%; height: 5%;"></a>
+            
+            <!-- Áreas clicáveis do menu - CHURRASCO -->
+            <a href="#bovinos-churrasco" class="clickable-area" style="top: 50%; left: 5%; width: 40%; height: 5%;"></a>
+            <a href="#aves-suinos-churrasco" class="clickable-area" style="top: 55%; left: 5%; width: 40%; height: 5%;"></a>
+            <a href="#linguicas" class="clickable-area" style="top: 60%; left: 5%; width: 40%; height: 5%;"></a>
+        </div>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 3: Cortes Bovinos - Dia a Dia -->
+    <section class="page" id="bovinos-dia">
+        <img src="images/pagina_3.png" alt="Cortes Bovinos - Dia a Dia">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 4: Cortes de Frango - Dia a Dia -->
+    <section class="page" id="frango-dia">
+        <img src="images/pagina_4.png" alt="Cortes de Frango - Dia a Dia">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 5: Cortes Suínos - Dia a Dia -->
+    <section class="page" id="suinos-dia">
+        <img src="images/pagina_5.png" alt="Cortes Suínos - Dia a Dia">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 6: Peixes - Dia a Dia -->
+    <section class="page" id="peixes-dia">
+        <img src="images/pagina_6.png" alt="Peixes - Dia a Dia">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 7: Frutos do Mar - Dia a Dia -->
+    <section class="page" id="frutos-mar">
+        <img src="images/pagina_7.png" alt="Frutos do Mar - Dia a Dia">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 8: Cortes Bovinos - Churrasco -->
+    <section class="page" id="bovinos-churrasco">
+        <img src="images/pagina_8.png" alt="Cortes Bovinos - Churrasco">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 9: Cortes Aves & Suínos - Churrasco -->
+    <section class="page" id="aves-suinos-churrasco">
+        <img src="images/pagina_9.png" alt="Cortes Aves e Suínos - Churrasco">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <div class="page-separator"></div>
+
+    <!-- Página 10: Linguiças Artesanais - Churrasco -->
+    <section class="page" id="linguicas">
+        <img src="images/pagina_10.png" alt="Linguiças Artesanais - Churrasco">
+        <a href="#menu" class="back-to-menu">← Voltar ao Menu</a>
+    </section>
+
+    <!-- Botão flutuante para voltar ao menu -->
+    <div class="scroll-indicator" onclick="location.href='#menu'">
+        ↑ Menu
+    </div>
+
+    <script>
+        // Esconder o botão de menu quando estiver no topo
+        window.addEventListener('scroll', function() {
+            const indicator = document.querySelector('.scroll-indicator');
+            if (window.scrollY < 300) {
+                indicator.style.opacity = '0';
+                indicator.style.pointerEvents = 'none';
+            } else {
+                indicator.style.opacity = '1';
+                indicator.style.pointerEvents = 'auto';
+            }
+        });
+    </script>
+
+</body>
+</html>

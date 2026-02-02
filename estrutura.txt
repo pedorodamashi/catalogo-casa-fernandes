@@ -1,0 +1,31 @@
+ESTRUTURA DO CATÁLOGO CASA DE CARNES FERNANDES
+=============================================
+
+Total de páginas: 10
+
+PÁGINAS:
+1. CAPA - "Catálogo de Produtos" com logo Fernandes e foto de churrasco
+2. MENU - Lista de categorias (Dia a Dia, Churrasco, Kit Hamburguer, Charcutaria, Artesanal, Acompanhamentos, Acessórios)
+3. CORTES BOVINOS - Dia a Dia (Bifes, Strogonoff, Carnes Moídas, Cubos, Medalhões, Para Forno, Para Panela)
+4. CORTES DE FRANGO - Dia a Dia (Bifes, Strogonoff, Cortes de Frango, Miúdos, Medalhões, Carnes Moídas)
+5. CORTES SUÍNOS - Dia a Dia (Bifes, Cubos, Carnes Inteiras)
+6. PEIXES - Dia a Dia (Bifes, Lombo, Postas, Salmão, Medalhões, Outros)
+7. FRUTOS DO MAR - Dia a Dia (Camarões, Lagostas, Polvos e Lulas, Mariscos, Outros)
+8. CORTES BOVINOS - Churrasco (Linha Angus, Linha Wagyu)
+9. CORTES AVES & SUÍNOS - Churrasco (Cortes de Frango, Cortes Suínos)
+10. LINGUIÇAS ARTESANAIS - Churrasco (Produção Própria, Recheados, Salsichas)
+
+LINKS DO MENU (Página 2):
+- DIA A DIA:
+  - Cortes bovinos > página 3
+  - Cortes de frango > página 4
+  - Cortes suínos > página 5
+  - Peixes > página 6
+  - Frutos do mar > página 7
+
+- CHURRASCO:
+  - Cortes bovinos > página 8
+  - Cortes de aves e suínos > página 9
+  - Linguiças > página 10
+
+- Cada página tem botão "VOLTAR AO MENU" > página 2
